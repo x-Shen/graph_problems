@@ -46,8 +46,6 @@ class Flow:
                 self.graph[u][v] -= path_flow
                 self.graph[v][u] += path_flow
                 v = parent[v]
-                if v==source:
-                    break
         return max_flow
 
 graph = [[0, 16, 13, 0, 0, 0],
